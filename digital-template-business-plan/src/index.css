@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* Ábaco Digital · Paleta central */
+    --c-noche: #0E1B3D;
+    --c-cobalto: #163A9F;
+    --c-electrico: #1D4ED8;
+    --c-naranja: #FF5A36;
+    --c-naranja-osc: #D63E1E;
+    --c-nube: #F7F8FC;
+    --c-grafito: #262A33;
+    --c-gris: #5A6472;
+    --c-linea: #DCE4F5;
+    --c-exito: #37D67A;
+    --c-cyan: #00E5FF;
+    --c-tinta: #E4EBFB;
+
+    --font-display: 'Sora', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-label: 'Montserrat', -apple-system, sans-serif;
+    --font-serif: 'Playfair Display', Georgia, ser-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #F7F8FC;
+    color: #0E1B3D;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-label {
+  font-family: var(--font-label);
+  letter-spacing: 0.06em;
+}
+
+.font-serif-brand {
+  font-family: var(--font-serif);
+}
+
+.font-mono-num {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Scrollbars marca Ábaco Digital */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #E4EBFB;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #B9C7E4;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #163A9F;
+}
+
+/* Rango (sliders) con color de marca */
+input[type="range"] {
+  accent-color: #FF5A36;
+}
